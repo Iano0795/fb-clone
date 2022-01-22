@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><div class="div1">
+    <nav class="nav">
+        <img src="facebook.png" alt="fbicon" id="fb-icon">
+        <img src="search.png" alt="searchIcon" id="searchicon">
+        <div class="search-container">
+            <img src="search.png" alt="searchIcon">
+            <input type="text" placeholder="Search Facebook" id="search">
+        </div>
+        <div class="nav-center">
+            <img src="home.png" alt="Home Icon">
+            <img src="youtube.png" alt="Video Icon">
+            <img src="group.png" alt="Group Icon">
+            <img src="games.png" alt="Games Icon">
+        </div>
+        <img src="menu.png" alt="menu icon" id="menuicon" onclick="showMenu()">
+        <div class="nav-right" id="nav-right">
+            <img src="close.png" alt="close icon" id="closeicon" onclick="hideMenu()">
+            <img src="user.png" alt="account icon" id="homeIcon"><h3>User</h3>
+            <img src="menu.png" alt="menu icon">
+            <img src="messenger.png" alt="messenger icon">
+            <img src="notification.png" alt="notification icon">
+            <img src="caret-down.png" alt="dropdown icon">
+        </div>
+    </nav></div>
+    <div class="content">
+        <div class="content-left">
+            <div>
+                <img src="user.png" alt="user icon">
+                <h3>User Profile</h3>
+            </div>
+            <div>
+                <img src="friends.png" alt="friend icon">
+                <h3>Friends</h3>
+            </div>
+            <div>
+                <img src="group.png" alt="group icon">
+                <h3>Groups</h3>
+            </div>
+            <div>
+                <img src="youtube.png" alt="video icon">
+                <h3>Watch</h3>
+            </div>
+            <div>
+                <img src="clock.png" alt="Memries icon">
+                <h3>Memories</h3>
+            </div>
+            <div>
+                <img src="ribbon.png" alt="Ribbon icon">
+                <h3>Saved</h3>
+            </div>
+            <div>
+                <img src="downward-arrow.png" alt="Downward arrow icon">
+                <h3>See more</h3>
+            </div>
+        </div>
+        <div>
+        <div class="stories">            
+            <div id="Story">
+                <img src="redrose.jpg" alt="firstStatus" id="myStory"/>
+                <img src="bitch.jpg" alt="" id="me">
+                <div id="create"><p>Create Story</p></div>
+            </div>
+            <div id="story-container">
+                <img src="ford front.jpg" alt="" id="story"/>
+                <img src="ferrari.jpg" alt="" id="FirstUser"/>
+            </div>
+            <div id="story-container">
+                <img src="red hat.jpg" alt="" id="story">
+                <img src="ford shelby.jpg" alt="" id="SecondUser"/>
+            </div>
+            <div id="story-container">
+                <img src="moody.jpg" alt="" id="story">
+                <img src="curious.jpg" alt="" id="ThirdUser">
+            </div>
+            <div id="story-container">
+                <img src="lamborghini.jpg" alt="" id="story">
+                <img src="dodge.jpg" alt="" id="FourthUser">
+            </div>
+        </div>
+        <div class="post">
+            <div class="feeling">
+                <div class="input">
+                    <img src="bitch.jpg" alt="" id="user" />
+                    <input type="text" placeholder="What's on your mind?" id="input">
+                </div>
+                <hr id="line">
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        var display = document.getElementById("nav-right");
+        function showMenu(){
+            display.style.display="flex";
+        }
+        function hideMenu(){
+            display.style.display="none";
+        }
+    </script>
+</body>
+</html>

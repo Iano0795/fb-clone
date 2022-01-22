@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(221, 220, 220);
+}
+.div1{
+    box-shadow: 0 0 2px 5px, rgba(0, 0, 0, 0.7);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    box-shadow: 10px -10px 12px, rgba(0,0,0,0.8);
+    background-color: #fff;
+    height: 50px;
+}
+.nav img{
+    margin: 15px;
+    height: auto;
+    width: 32px;
+}
+.search-container{
+    display: flex;
+    align-items: center;
+    background-color: rgb(189, 189, 189);
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+}
+#search{
+    border: none;
+    background-color: transparent;
+}
+.search-container img{
+    margin: 0;
+    height: auto;
+    width: 20px;
+}
+.nav-center{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 200px;
+}
+.nav-center img{
+    height: auto;
+    width: 25px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+.nav-center img:hover{
+    border-bottom: 2px solid #00e1ff;
+    transform: translateY(-5px);
+}
+.nav-right{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+.nav-right img{
+    height: auto;
+    width: 25px;
+}
+.nav-right h3{
+    display: inline;
+    position: relative;
+    top: -20px;
+}
+h3{
+    display: inline;
+    position: relative;
+    top: -10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+}
+#searchicon{
+    display: none;
+    height: auto;
+    width: 20px;
+}
+#menuicon{
+    display: none;
+}
+#closeicon{
+    display: none;
+}
+.content div{
+    display: block;
+}
+.content div img{
+    height: auto;
+    width: 25px;
+    margin: 5px;
+}
+#fb-icon{
+    border-radius: 50px;
+    height: auto;
+    width: 35px;
+}
+.content-right{
+    position: absolute;
+    top: 5px;
+}
+.content-right div{
+   margin: 10px;
+}
+.stories p{
+    display: inline;
+}
+.stories{
+    position: absolute;
+    top: 5px;
+    left: 20%;
+}
+.content{
+    position: relative;
+}
+#story, #myStory{
+    display: inline-block;
+    height: auto;
+    width: 130px;
+    border-radius: 25px;
+    margin: 2px;
+    position: relative;
+}
+#create{
+    background-color: #fff;
+    border-end-start-radius: 25px;
+    border-end-end-radius: 25px;
+    display: inline;
+    position: absolute;
+    top: -35px;
+    left: 2px;
+    width: 130px;
+    height: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#create p{
+    position: relative;
+    top: 25%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+#Story{
+    position: relative;
+}
+#story{
+    position: relative;
+}
+#story-container, #story{
+    margin: 3px;
+}
+#FirstUser, #SecondUser, #ThirdUser, #FourthUser, #me{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 50px;
+    border: 2px solid rgb(0, 238, 255);
+    height: 30px;
+    width: 30px;
+}
+.feeling{
+    border-radius: 25px;
+    background-color: #fff;
+    height: 100px;
+    width: 400px;
+    position: relative;
+    left: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#user{
+    margin: 10px;
+   height: 30px;
+    width: 30px;   
+    border-radius: 50px;
+    display: inline-block;
+}
+#input{
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(189, 189, 189);
+    display: inline-block;
+}
+#line {
+    position: relative;
+    left: 15px;
+    width: 350px;
+    display: block;
+    margin: 10px;
+}
+.input{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-container{
+        display: none;
+    }
+    #searchicon{
+        display: inline-block;
+        position: absolute;
+        right: 35px;
+    }
+    .nav{
+        background-color: transparent;
+    }
+    .nav-right{
+        display: none;
+        background-color: rgb(255, 232, 232);
+        border-start-start-radius: 25px;
+        border-end-start-radius: 25px;
+        position: absolute;
+        right: 0;
+        width: 150px;
+        height: 100vh;
+        z-index: 2;
+    }
+    .nav-right img {
+        display: block;
+        height: auto;
+        width: 25px;
+        font-size: 12px;
+    }
+    .nav-center{
+        left: -10%;
+        top: 30px;
+        position: absolute;
+    }
+    .nav-center img{
+        height: auto;
+        width: 25px;
+        margin-left: 10px;
+    }
+    #menuicon{
+        display: inline;
+        height: auto;
+        width: 25px;
+        position: absolute;
+        right: 0;
+    }
+    #closeicon{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        width: 25px;
+    }
+    .content-left{
+        visibility: hidden;
+    }
+    #story, #myStory {
+        display: inline-block;
+        height: auto;
+        width: 50px;
+        border-radius: 10px
+    }
+    .stories{
+        position: absolute;
+        top: 20%;
+    }
+    #create{
+        position: absolute;
+        top: -25px;
+        width: 50px;
+        height: 40px;
+        border-end-start-radius: 10px;
+        border-end-end-radius: 10px;
+    }
+    #create p{
+        font-size: 10px;
+        position: relative;
+        top: 7%;
+        left: 17%;
+        transform: translate(-50%, -50%);
+        word-spacing: 1px;
+    }
+  
+}
+
